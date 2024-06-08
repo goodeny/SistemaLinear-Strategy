@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaLinear
 {
-    public class LUDecomposition : IStrategy
+    public class GaussDecomposition : IStrategy
     {
         public void Execute(double[,] A, double[] b, out double[,] L, out double[,] U, out double[] x)
         {
@@ -16,6 +16,7 @@ namespace SistemaLinear
             x = new double[n];
             double[] y = new double[n];
 
+            // Initialize L and U matrices
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -25,29 +26,25 @@ namespace SistemaLinear
                     else
                         L[i, j] = 0;
 
-                    U[i, j] = 0;
+                    U[i, j] = A[i, j];
                 }
             }
 
-            for (int i = 0; i < n; i++)
+            // Gaussian elimination
+            for (int k = 0; k < n; k++)
             {
-                for (int j = i; j < n; j++)
+                for (int i = k + 1; i < n; i++)
                 {
-                    double sum = 0;
-                    for (int k = 0; k < i; k++)
-                        sum += (L[i, k] * U[k, j]);
-                    U[i, j] = A[i, j] - sum;
-                }
-
-                for (int j = i + 1; j < n; j++)
-                {
-                    double sum = 0;
-                    for (int k = 0; k < i; k++)
-                        sum += (L[j, k] * U[k, i]);
-                    L[j, i] = (A[j, i] - sum) / U[i, i];
+                    double factor = U[i, k] / U[k, k];
+                    L[i, k] = factor;
+                    for (int j = k; j < n; j++)
+                    {
+                        U[i, j] -= factor * U[k, j];
+                    }
                 }
             }
 
+            // Forward substitution to solve Ly = b
             for (int i = 0; i < n; i++)
             {
                 double sum = 0;
@@ -56,6 +53,7 @@ namespace SistemaLinear
                 y[i] = (b[i] - sum);
             }
 
+            // Backward substitution to solve Ux = y
             for (int i = n - 1; i >= 0; i--)
             {
                 double sum = 0;
@@ -65,5 +63,4 @@ namespace SistemaLinear
             }
         }
     }
-
 }

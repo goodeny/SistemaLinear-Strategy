@@ -17,14 +17,35 @@ namespace SistemaLinear
             //PrintMatrix(A);
             //Console.WriteLine("Matrix b:");
             //PrintVector(b);
-
-            IMatrixDecomposition luDecomposition = new LUDecomposition();
-            MatrixSolver solver = new MatrixSolver(luDecomposition);
-
-            solver.Solve(A, b);
-            Console.ReadKey();
-        }
-
+            Console.WriteLine("");
+            Console.WriteLine("Escolha o método de decomposição:");
+            Console.WriteLine("1 - LU");
+            Console.WriteLine("2 - Gauss");
+            Console.WriteLine("3 - Cholesky");
+            int escolha = int.Parse(Console.ReadLine());
+            IStrategy decomposition;
+            
+                switch (escolha)
+                {
+                    case 1:
+                        decomposition = new LUDecomposition();
+                        break;
+                    case 2:
+                        decomposition = new GaussDecomposition();
+                        break;
+                    case 3:
+                        A = MatrixGenerator.Generate3x3SymmetricPositiveDefiniteMatrix();
+                        decomposition = new CholeskyDecomposition();
+                        break;
+                    default:
+                        Console.WriteLine("Escolha inválida.");
+                        decomposition = null;
+                        break;
+                }
+                Context solver = new Context(decomposition);
+                solver.ExecuteStrategy(A, b);
+                Console.ReadKey();
+            }
         private static void PrintMatrix(double[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)

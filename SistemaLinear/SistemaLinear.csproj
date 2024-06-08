@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMatrixDecomposition.cs" />
+    <Compile Include="CholeskyDecomposition.cs" />
+    <Compile Include="GaussDecomposition.cs" />
+    <Compile Include="IStrategy.cs" />
     <Compile Include="LUDecomposition.cs" />
     <Compile Include="MatrixGenerator.cs" />
-    <Compile Include="MatrixSolver.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
