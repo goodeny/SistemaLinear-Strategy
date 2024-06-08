@@ -1,0 +1,15 @@
+C:\Users\alunos\source\repos\SistemaLinear\bin\Debug\SistemaLinear.exe.config
+C:\Users\alunos\source\repos\SistemaLinear\bin\Debug\SistemaLinear.exe
+C:\Users\alunos\source\repos\SistemaLinear\bin\Debug\SistemaLinear.pdb
+C:\Users\alunos\source\repos\SistemaLinear\obj\Debug\SistemaLinear.csproj.AssemblyReference.cache
+C:\Users\alunos\source\repos\SistemaLinear\obj\Debug\SistemaLinear.csproj.SuggestedBindingRedirects.cache
+C:\Users\alunos\source\repos\SistemaLinear\obj\Debug\SistemaLinear.csproj.CoreCompileInputs.cache
+C:\Users\alunos\source\repos\SistemaLinear\obj\Debug\SistemaLinear.exe
+C:\Users\alunos\source\repos\SistemaLinear\obj\Debug\SistemaLinear.pdb
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\bin\Debug\SistemaLinear.exe.config
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\bin\Debug\SistemaLinear.exe
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\bin\Debug\SistemaLinear.pdb
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\obj\Debug\SistemaLinear.csproj.AssemblyReference.cache
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\obj\Debug\SistemaLinear.csproj.CoreCompileInputs.cache
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\obj\Debug\SistemaLinear.exe
+C:\Users\assis\OneDrive\Área de Trabalho\SistemaLinear-Strategy-main\SistemaLinear-Strategy-main\SistemaLinear\obj\Debug\SistemaLinear.pdb

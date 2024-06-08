@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaLinear", "SistemaLinear.csproj", "{F0BDDDD7-5DF5-4D54-8CD7-16D8EA6CDDFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0BDDDD7-5DF5-4D54-8CD7-16D8EA6CDDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0BDDDD7-5DF5-4D54-8CD7-16D8EA6CDDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0BDDDD7-5DF5-4D54-8CD7-16D8EA6CDDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0BDDDD7-5DF5-4D54-8CD7-16D8EA6CDDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67CDAAD9-77FE-420F-8919-070808D556DD}
+	EndGlobalSection
+EndGlobal
